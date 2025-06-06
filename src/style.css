@@ -1,18 +1,34 @@
 * {
     margin: 0; padding: 0;
     box-sizing: border-box;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/fonts/Rubik-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Rubik-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('assets/fonts/Rubik-Light.woff2') format('woff2'),
+        url('assets/fonts/Rubik-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+button {
+    font-family: inherit;
 }
 
 body {
     background-color: skyblue;
-}
-
-body,
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-family: "Rubik";
 }
 
 header {
@@ -21,11 +37,16 @@ header {
     padding-top: 20px;
 }
 
+header h1 {
+    text-align: center;
+}
+
 header button {
     flex: 1;
     background-color: white;
     border: 2px solid gray;
     padding: 20px;
+    font-size: 1.2rem;
 }
 
 header button:hover {
@@ -38,4 +59,50 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
+}
+
+#content {
+    border: 2px solid black;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: max(50vw, 320px);
+}
+
+#content > h2 {
+    text-align: center;
+}
+
+#content > img {
+    margin: 20px 0;
+}
+
+.attribution {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#content > section {
+    display: grid;
+    border-top: 1px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+#content > section:nth-child(even) {
+    grid-template-columns: 1fr 3fr;
+}
+#content > section:nth-child(odd) {
+    grid-template-columns: 3fr 1fr;
+}
+
+section > * {
+    padding: 0 10px;
+}
+
+#content .header {
+    font-weight: 900;
 }
