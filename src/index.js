@@ -31,5 +31,3 @@ const uiController = (function() {
     populateContact();
     });
 })();
-
-populateHome();

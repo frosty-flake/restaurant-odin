@@ -1,0 +1,32 @@
+.menu > section {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.menu > section:nth-child(even) .header {
+    border-right: 1px solid gray;
+}
+
+.menu > section:nth-child(odd) .header {
+    border-left: 1px solid gray;
+}
+
+.menu .header,
+.menu .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .content {
+    text-align: center;
+    align-self: center;
+    padding: 0 20px;
+}
+
+.menu img {
+    max-width: 70%;
+    border-radius: 20px;
+    border: 2px solid skyblue;
+    margin-bottom: 20px;
+}
