@@ -1,4 +1,4 @@
-#content > img {
+.home > img {
     margin: 20px 0;
 }
 
@@ -10,10 +10,6 @@
 
 .home > section {
     display: grid;
-    border-top: 1px solid gray;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 20px 0;
 }
 
 .home > section:nth-child(even) {
@@ -25,8 +21,4 @@
 
 .home > section > * {
     padding: 0 10px;
-}
-
-.home .header {
-    font-weight: 900;
 }
