@@ -1,0 +1,32 @@
+#content > img {
+    margin: 20px 0;
+}
+
+.attribution {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+#content > section {
+    display: grid;
+    border-top: 1px solid gray;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+#content > section:nth-child(even) {
+    grid-template-columns: 1fr 3fr;
+}
+#content > section:nth-child(odd) {
+    grid-template-columns: 3fr 1fr;
+}
+
+section > * {
+    padding: 0 10px;
+}
+
+#content .header {
+    font-weight: 900;
+}
